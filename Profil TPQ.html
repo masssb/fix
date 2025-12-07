@@ -33,15 +33,27 @@
     h2{font-size:22px;color:#073763;margin-bottom:14px}
     p{font-size:15px;line-height:1.7;margin-bottom:14px}
 
-    .img-box{
-      width:100%;
-      height:280px;
-      background:#ddd;
-      border-radius:12px;
-      margin-bottom:18px;
-      background-size:cover;
-      background-position:center;
-    }
+    /* gambar frame utama */
+.img-box {
+  width: 100%;
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+/* foto bersama biar masuk frame */
+.profile-photo {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  margin-bottom: 15px;
+}
+
 
     footer{background:#071b2e;color:#cfe6ff;padding:26px;margin-top:40px}
   </style>
@@ -80,8 +92,9 @@
     <div class="card">
 
       <!-- FOTO PROFIL -->
-      <div class="img-box" style="background-image:url('assets/img/about.jpg');"></div>
-      <img src="assets/img/galeri1.jpg">
+     <div class="img-box" style="background-image:url('assets/img/about.jpg');"></div>
+     <img src="assets/img/galeri1.jpg" class="profile-photo">
+      
       <h2>Sejarah & Latar Belakang</h2>
       <p>
         Untuk membimbing anak-anak agar mampu membaca Al-Qur'an, mengenai isinya dan dapat melaksanakan dalam kehidupan sehari-hari, maka di depan masjid Al-Mubarok didirikan sebuah gedung berlantai dua untuk tempat belajar membaca Al-Qur'an yang disebut dengan TPQ (Taman Pendidikan Al-Qur'an) Al-Mubarok. Pembangunan gedung tersebut dilakukan dua tahap. Untuk tahap pertama dimulai tahun 1426 H/2005 M, sedangkan untuk pembangunan tahap kedua dimulai sejak 1430 H/2009 M. Adapun tanah yang ditempati untuk pembangunan TPQ (Taman Pendidikan Al-Qur'an) Al-Mubarok tersebut adalah tanah wakaf dari ibu Hj. Lilik Salmah alamat Jl. Raya Rungkut Lor 127 Surabaya dengan ukuran seluas 270 M² (9×30 M) sebagaimana terdaftar di Buku C kelurahan Gununganyar No.1213/74 Persil 23 d.ll dengan batas-batas: 
@@ -119,6 +132,7 @@
 
 </body>
 </html>
+
 
 
 
