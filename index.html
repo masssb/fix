@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TPQ Al Mubarok - Gunung Anyar</title>
+  <meta name="description" content="TPQ Al Mubarok Gunung Anyar">
+
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Segoe UI',Roboto,Arial,sans-serif;background:#fafafa;color:#222}
+    .container{max-width:1180px;margin:auto;padding:20px}
+
+    header{background:linear-gradient(180deg,#0b5394,#073763);color:#fff}
+    .topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 20px}
+
+    .running-wrapper {
+  background: #0b5394;
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+    /* =======================
+   NAVBAR HORIZONTAL FIX
+   ======================= */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  position: relative;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 0;
+  display: inline-block;
+}
+
+/* Branding logo + teks lebih rapi */
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.muted {
+  font-size: 13px;
+  opacity: .9;
+}
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.muted {
+  font-size: 13px;
+  opacity: .9;
+}
+
+ /* ============================
+   FIX MENU DROPDOWN AGAR RAPI
+   ============================ */
+
+/* 1. Sembunyikan semua submenu */
+.submenu {
+  display: none;
+  position: absolute;
+  background: #073763;
+  padding: 10px 0;
+  border-radius: 6px;
+  min-width: 220px;
+  top: 40px;
+  z-index: 999;
+}
+
+/* 2. Tampilkan submenu saat hover */
+nav ul li:hover > .submenu {
+  display: block;
+}
+
+/* 3. Submenu item */
+.submenu li a {
+  display: block;
+  padding: 10px 15px;
+  white-space: nowrap;
+  color: #fff;
+}
+
+.submenu li a:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+/* 4. Panah ▼ hanya untuk menu yg punya dropdown */
+nav ul li > a::after {
+  content: " ▼";
+  font-size: 10px;
+  margin-left: 4px;
+  opacity: 0.7;
+}
+
+nav ul li:not(:has(.submenu)) > a::after {
+  content: "";
+}
+
+/* 5. Supaya submenu tidak nempel di kiri menu */
+nav ul li {
+  position: relative;
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container topbar">
+    <div class="branding">
+      <img src="assets/img/logo.png" style="width:70px;height:70px;border-radius:8px;">
+      <div>
+        <div class="title">TPQ Al Mubarok Gunung Anyar</div>
+        <div class="muted">Membangun generasi berilmu dan beramal</div>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+
+        <!-- 1. BERANDA -->
+        <li>
+          <a href="index.html">Beranda</a>
+          <ul class="submenu">
+            <li><a href="Slider.html">Galeri</a></li>
+            <li><a href="Profil Singkat TPQ.html">Profil Singkat TPQ</a></li>
+            <li><a href="Highlight Program.html">Highlight Program</a></li>
+            <li><a href="Info Pendaftaran.html">Info Pendaftaran</a></li>
+            <li><a href="Jadwal Terbaru.html">Jadwal Terbaru</a></li>
+            <li><a href="Testimoni Wali Santri.html">Testimoni Wali Santri</a></li>
+          </ul>
+        </li>
+
+        <!-- 2. TENTANG KAMI -->
+        <li>
+          <a href="Profil TPQ.html">Tentang Kami</a>
+          <ul class="submenu">
+            <li><a href="Profil TPQ.html">Profil TPQ</a></li>
+            <li><a href="Visi & Misi.html">Visi & Misi</a></li>
+            <li><a href="Struktur Organisasi.html">Struktur Organisasi</a></li>
+            <li><a href="Fasilitas TPQ.html">Fasilitas TPQ</a></li>
+            <li><a href="Legalitas.html">Legalitas</a></li>
+          </ul>
+        </li>
+
+        <!-- 3. PROGRAM -->
+        <li><a href="Program.html">Program</a></li>
+
+        <!-- 4. PENDAFTARAN -->
+        <li>
+          <a href="Syarat Pendaftaran.html">Pendaftaran</a>
+          <ul class="submenu">
+            <li><a href="Syarat Pendaftaran.html">Syarat Pendaftaran</a></li>
+            <li><a href="Alur Pendaftaran.html">Alur Pendaftaran</a></li>
+            <li><a href="Formulir Online.html">Formulir Online</a></li>
+            <li><a href="Biaya Pendidikan.html">Biaya Pendidikan</a></li>
+          </ul>
+        </li>
+
+        <!-- 5. KEGIATAN -->
+        <li>
+          <a href="Kegiatan Harian.html">Kegiatan</a>
+          <ul class="submenu">
+            <li><a href="Kegiatan Harian.html">Kegiatan Harian</a></li>
+            <li><a href="Kegiatan mingguan.html">Kegiatan Mingguan</a></li>
+            <li><a href="Kegiatan Bulanan.html">Kegiatan Bulanan</a></li>
+            <li><a href="Kegiatan Tahunan.html">Kegiatan Tahunan</a></li>
+            
+          </ul>
+        </li>
+
+        <!-- 6. PENGUMUMAN -->
+        <li><a href="Pengumuman.html">Pengumuman</a></li>
+
+        <!-- 7. KONTAK -->
+        <li>
+          <a href="Informasi Kontak.html">Kontak & Layanan</a>
+          <ul class="submenu">
+            <li><a href="Informasi Kontak.html">Informasi Kontak</a></li>
+            <li><a href="Peta Lokasi.html">Peta Lokasi</a></li>
+            <li><a href="Form Kritik & Saran.html">Form Kritik & Saran</a></li>
+            <li><a href="Media Sosial.html">Media Sosial</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+  
+<!-- ⭐⭐⭐ RUNNING TEXT DITAMBAHKAN DI SINI ⭐⭐⭐ -->
+  <div class="running-wrapper">
+    <marquee behavior="scroll" direction="left">
+      Selamat Datang di TPQ Al Mubarok Gunung Anyar — Membangun Generasi Qurani yang Berilmu, Berakhlak, dan Beramal
+    </marquee>
+  </div>
+  <!-- ⭐⭐⭐ BATAS RUNNING TEXT ⭐⭐⭐ -->
+  
+  <div class="hero">
+    <div class="hero-grid">
+      <div>
+                
+        </div>
+      </div>
+
+      <div>
+        <div class="quick-box">
+                   
+          <a class="btn btn-primary" href="Pengumuman.html">Lihat Pengumuman</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<!-- BAGIAN 2 AKAN MENYUSUL -->
+<main class="container" style="padding:40px 20px;">
+
+  <!-- Tentang Kami -->
+  <section style="margin-bottom:48px;text-align:center;max-width:800px;margin-left:auto;margin-right:auto;">
+    <h2 style="margin-bottom:10px;color:#073763;font-size:28px;">Tentang Kami</h2>
+    <p style="font-size:16px;line-height:1.6;color:#444;">
+      TPQ Al Mubarok Gunung Anyar berkomitmen membentuk generasi Qurani melalui pendidikan akhlak, adab, dan ilmu.
+      Metode pembelajaran modern dipadukan dengan nilai-nilai Islam yang kuat.
+    </p>
+  </section>
+
+
+  <!-- Kontak -->
+  <section style="margin-bottom:48px;max-width:900px;margin-left:auto;margin-right:auto;">
+    <h2 style="margin-bottom:20px;color:#073763;text-align:center;font-size:28px;">Kontak</h2>
+
+    <div style="display:flex;justify-content:center;">
+      <div style="background:#fff;padding:25px 30px;border-radius:12px;box-shadow:0 3px 12px rgba(0,0,0,0.12);width:100%;max-width:600px;">
+        <h3 style="margin-bottom:15px;font-size:20px;color:#073763;">Informasi Kontak</h3>
+
+        <p style="margin-bottom:8px;"><strong>Alamat:</strong> Jl. Raya Gn. Anyar Sawah No.19, Gn. Anyar, Kec. Gn. Anyar, Surabaya, Jawa Timur 60294</p>
+        <p style="margin-bottom:8px;"><strong>Telepon:</strong> 0896-6344-4885 (Ustadz Mustofa)</p>
+        <p style="margin-bottom:8px;"><strong>Telepon:</strong> 0858-9563-2735 (Ustadzah Niken)</p>
+        <p style="margin-bottom:8px;"><strong>Email:</strong> tpqalmubarokgununganyar19@gmail.com</p>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer style="background:#073763;color:#fff;padding:30px;margin-top:40px;">
+  <div class="container">
+    <p>© 2025 TPQ Al Mubarok Gunung Anyar — Semua Hak Dilindungi</p>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
